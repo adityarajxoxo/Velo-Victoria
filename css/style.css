@@ -3,15 +3,17 @@ body {
   font-family: Arial, sans-serif;
 }
 nav{
+  position:absolute;
+  top:0;
   width:100%;
   display:flex;
   justify-content:space-between;
   align-items:center;
-  padding:20px 40px;
+  padding:25px 40px;
   box-sizing:border-box;
-  position:absolute;
   z-index:100;
 }
+
 .left {
   display: flex;
   gap: 20px;
@@ -26,18 +28,8 @@ nav{
 
 .logo{
   color:white;
-  letter-spacing:3px;
-  font-size:24px;
-}
-
-
-
-
-.left {
-  display: flex;
-  gap: 20px;
-  margin-left: 20px;
-}
+  letter-spacing:4px;
+  font-size:16px;
 
 
 
@@ -303,11 +295,24 @@ img{
 @media (max-width:768px){
 
   nav{
+    position:absolute;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
     padding:20px 10px;
+    gap:15px;
+  }
+
+  .left,
+  .right{
+    margin:0;
+    justify-content:center;
+    flex-wrap:wrap;
+    width:100%;
   }
 
   .logo{
-    font-size:28px;
+    font-size:24px;
     text-align:center;
   }
 
@@ -321,26 +326,18 @@ img{
 
   .hero-text{
     width:90%;
-    top:65%;
+    top:70%;
   }
 
   .hero-text h2{
-    font-size:45px;
+    font-size:28px;
   }
 
-  .login_interface{
-    padding:20px;
-    margin-top:80px;
+  .items img{
+    max-width:90%;
   }
 
-  .login_input input{
-    width:100%;
-    box-sizing:border-box;
-  }
-
-  .h1_login{
-    font-size:55px;
-  }
+}
 }
 }
 body{

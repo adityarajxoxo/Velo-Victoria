@@ -296,5 +296,50 @@ img{
     width:90%;
     top:60%;
   }
+  nav{
+  background: rgba(0,0,0,0.2);
+}
 
+@media (max-width:768px){
+
+  nav{
+    padding:20px 10px;
+  }
+
+  .logo{
+    font-size:28px;
+    text-align:center;
+  }
+
+  nav a{
+    font-size:14px;
+  }
+
+  .hero{
+    height:100vh;
+  }
+
+  .hero-text{
+    width:90%;
+    top:65%;
+  }
+
+  .hero-text h2{
+    font-size:45px;
+  }
+
+  .login_interface{
+    padding:20px;
+    margin-top:80px;
+  }
+
+  .login_input input{
+    width:100%;
+    box-sizing:border-box;
+  }
+
+  .h1_login{
+    font-size:55px;
+  }
+}
 }

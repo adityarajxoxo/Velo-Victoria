@@ -253,6 +253,9 @@ img{
 
 /* MOBILE */
 @media (max-width:768px){
+  .hero{
+    background-image: url(pictures/modelph.jpg);
+  }
 
   nav{
     flex-direction: column;

@@ -255,7 +255,12 @@ img{
 @media (max-width:768px){
   .hero{
     background-image: url(pictures/modelph.jpg);
-  }
+  background-size: cover;
+  background-position: center 30%;  
+  background-repeat: no-repeat;
+}
+
+
 
   nav{
     flex-direction: column;
@@ -311,7 +316,6 @@ img{
     top: 60%;
   }
 
-}
 @media (max-width:768px){
 
   nav{

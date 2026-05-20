@@ -54,7 +54,7 @@ nav a {
 
   position: relative;
   height: 75vh;
-  background-image: url('../pictures/model.jpg');
+  background-image: url('pictures/model.jpg');
   background-size: cover;
   background-position: center 30%;  
   background-repeat: no-repeat;

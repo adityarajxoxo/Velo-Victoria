@@ -295,7 +295,27 @@ button:hover{
   .login_input input{
     width: 90%;
   }
+  /* MENU -> ☰ */
+  .left a:first-child{
+    font-size: 0;
+  }
+
+  .left a:first-child::before{
+    content: "☰";
+    font-size: 28px;
+  }
+
+  /* SEARCH HIDE */
+  .left a:last-child{
+    display: none;
+  }
+
+  /* CONTACT HIDE */
+  .right a:first-child{
+    display: none;
+  }
 }
+
 .normal-nav{
   position: absolute;
   top: 20px;

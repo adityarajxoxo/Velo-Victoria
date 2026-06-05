@@ -18,21 +18,22 @@
        }
     }
     </style>
+   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&display=swap" rel="stylesheet">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
      <nav>
     
     <div class="left">
-      <a href="menu.html">Menu</a>
-      <a href="search.html">Search</a>
+      <a href="index.html">Home</a>
+      <a href="#" id="openSearch">Search</a>
     </div>
 
     <h1 class="logo">VELO VICTORIA</h1>
 
     <div class="right">
       <a href="contact.html">Contact Us</a>
-      <a href="login.html"><i class="fa-regular fa-user"></i></a>
+      <a href="#" id="openLogin"><i class="fa-regular fa-user"></i></a>
     </div>
     
   </nav>
@@ -48,21 +49,128 @@
     </div>
         <section class="collections">
         <h1>VELO VICTORIA COLLECTIONS</h1>
-        <div class="items">
-        
-        <img src="pictures/bag.jpg" alt=""> 
-        <img src="pictures/perfume.jpg" alt="">
-        <img src="pictures/sunglasses.jpg" alt="">
-        
-      
-        
-        <img src="pictures/belt.jpg" alt="">
-        <img src="pictures/jewellery.jpg" alt="">
-        <img src="pictures/watch.jpg" alt="">
-        
-        </div>
-        </section>
+        <p class="collection-subtitle">
+      Curated luxury essentials for modern elegance
+        </p>
+        <section class="filter-buttons">
+      <div class="filter-buttons">
+  <button data-category="all">All</button>
+  <button data-category="bag">Bags</button>
+  <button data-category="shoes">Shoes</button>
+  <button data-category="sunglasses">Sunglasses</button>
+  <button data-category="perfume">Perfumes</button>
+  <button data-category="watch">Watches</button>
+  <button data-category="belt">Belts</button>
+  <button data-category="bangle">Bangles</button>
+</div>
+</section>
 
+<section id="productGrid" class="product-grid"></section>
+        </section>
+<script src="products.js"></script>
+
+  <div class="login-panel" id="loginPanel">
+
+    <span class="close-panel" id="closeLogin">&times;</span>
+
+    <h2>VELO VICTORIA</h2>
+
+    <!-- LOGIN FORM -->
+    <div id="loginForm">
+
+        <form>
+            <label>Username</label>
+            <input type="text">
+
+            <label>Password</label>
+            <input type="password">
+
+            <button type="submit">LOGIN</button>
+        </form>
+
+        <p class="switch-form">
+            Don't have an account?
+            <a href="#" id="showSignup">
+                Create Account
+            </a>
+        </p>
+
+    </div>
+
+    <!-- SIGNUP FORM -->
+    <div id="signupForm" style="display:none;">
+
+        <label>Username</label>
+        <input type="text">
+
+        <label>Email</label>
+        <input type="email">
+
+        <label>Password</label>
+        <input type="password">
+
+        <button>Create Account</button>
+
+        <p>
+            Already have an account?
+            <a href="#" id="showLogin">
+                Login
+            </a>
+        </p>
+
+    </div>
+
+
+</div>
+    </div>
+    <div class="search-overlay" id="searchOverlay">
+
+    <span class="close-search" id="closeSearch">
+        &times;
+    </span>
+
+    <div class="search-content">
+
+        <h2>SEARCH</h2>
+
+        <input
+        type="text"
+        id="searchInput"
+        placeholder="Search Products...">
+
+        <div id="searchResults"></div>
+
+    </div>
+
+</div>
+<footer class="footer">
+
+    <h2>VELO VICTORIA</h2>
+
+    <div class="footer-links">
+
+        <a href="collection.html">Collections</a>
+
+        <a href="contact.html">Contact</a>
+
+        <a href="#">Privacy</a>
+
+        
+
+    </div>
+
+    <div class="socials">
+
+        <a href="#">Instagram</a>
+
+        <a href="#">Pinterest</a>
+
+    </div>
+
+    <p>© 2026 VELO VICTORIA</p>
+
+</footer>
+<script src="app.js"></script>
 
 </body>
 </html>

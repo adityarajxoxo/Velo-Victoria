@@ -1,10 +1,11 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Velo Victoria</title>
   <link rel="stylesheet" href="style.css">
+   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 
@@ -12,14 +13,14 @@
   <nav>
     
     <div class="left">
-      <a href="menu.html">  Menu</a>
-      <a href="search.html">Search</a>
+      <a href="#" id="openMenu">  Menu</a>
+      <a href="#" id="openSearch">Search</a>
     </div>
     <h1 class="logo">VELO VICTORIA</h1>
 
     <div class="right">
       <a href="contact.html">Contact Us</a>
-      <a href="login.html"><i class="fa-regular fa-user"></i></a>
+      <a href="#" id="openLogin"><i class="fa-regular fa-user"></i></a>
     </div>
     
   </nav>
@@ -33,22 +34,140 @@
         </div>
         </section>
     </div>
-        <section class="collections">
-        <h1>VELO VICTORIA COLLECTIONS</h1>
-        <div class="items">
-        
-        <img src="pictures/bag.jpg" alt=""> 
-        <img src="pictures/perfume.jpg" alt="">
-        <img src="pictures/sunglasses.jpg" alt="">
-        
-      
-        
-        <img src="pictures/belt.jpg" alt="">
-        <img src="pictures/jewellery.jpg" alt="">
-        <img src="pictures/watch.jpg" alt="">
-        
+       <section class="featured-products">
+
+    <h2>Featured Collections</h2>
+
+    <div class="product-showcase">
+
+        <div class="product-box">
+            <img src="pictures/bag1.png" alt="">
+            <h3>BAGS</h3>
         </div>
-        </section>
+
+        <div class="product-box">
+            <img src="pictures/watch1.png" alt="">
+            <h3>WATCHES</h3>
+        </div>
+
+        <div class="product-box">
+            <img src="pictures/perfume1.png" alt="">
+            <h3>PERFUMES</h3>
+        </div>
+
+        <div class="product-box">
+            <img src="pictures/sunglasses1.png" alt="">
+            <h3>SUNGLASSES</h3>
+        </div>
+
+        <div class="product-box">
+            <img src="pictures/belt.jpg" alt="">
+            <h3>BELTS</h3>
+        </div>
+
+        <div class="product-box">
+            <img src="pictures/jewellery.jpg" alt="">
+            <h3>JEWELLERY</h3>
+        </div>
+
+    </div>
+
+</section>
+        <div class="login-panel" id="loginPanel">
+
+    <span class="close-panel" id="closeLogin">&times;</span>
+
+    <h2>VELO VICTORIA</h2>
+
+    <form>
+        <label>Username</label>
+        <input type="text">
+
+        <label>Password</label>
+        <input type="password">
+
+        <button type="submit">LOGIN</button>
+    </form>
+
+</div>
+<div class="search-overlay" id="searchOverlay">
+
+    <span class="close-search" id="closeSearch">
+        &times;
+    </span>
+
+    <div class="search-content">
+
+        <h2>SEARCH</h2>
+
+        <input
+        type="text"
+        id="searchInput"
+        placeholder="Search Products...">
+
+        <div id="searchResults"></div>
+
+    </div>
+
+</div>
+<div class="menu-overlay" id="menuOverlay">
+
+    <span class="close-menu" id="closeMenu">
+        &times;
+    </span>
+
+    <div class="menu-content">
+
+        <a href="index.html">HOME</a>
+
+        <a href="collection.html">COLLECTIONS</a>
+
+        <a href="#">BAGS</a>
+
+        <a href="#">WATCHES</a>
+
+        <a href="#">PERFUMES</a>
+
+        <a href="#">SUNGLASSES</a>
+
+        <a href="#">BELTS</a>
+
+        <a href="#">JEWELLERY</a>
+
+        <a href="contact.html">CONTACT</a>
+
+    </div>
+
+</div>
+<footer class="footer">
+
+    <h2>VELO VICTORIA</h2>
+
+    <div class="footer-links">
+
+        <a href="collection.html">Collections</a>
+
+        <a href="contact.html">Contact</a>
+
+        <a href="#">Privacy</a>
+
+        <a href="#">Terms</a>
+
+    </div>
+
+    <div class="socials">
+
+        <a href="#">Instagram</a>
+
+        <a href="#">Pinterest</a>
+
+    </div>
+
+    <p>© 2026 VELO VICTORIA</p>
+
+</footer>
+
+<script src="app.js"></script>
 
 
 

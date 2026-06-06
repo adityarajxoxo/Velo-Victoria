@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact - Velo Victoria</title>
    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
@@ -12,78 +13,94 @@
  <nav class="normal-nav">
  <div class="left">
       <a href="index.html">Home</a>
+      <a href=""></a>
     </div>
     <h1 class="logo">VELO VICTORIA</h1>
 
     <div class="right">
-      
+      <a href=""></a>
       <a href="#" id="openLogin"><i class="fa-regular fa-user"></i></a>
+     
     </div>
   </nav>
   
 <section class="container">
 
+  <!-- LEFT SIDE CONTACT -->
+
+  <div class="contact">
+
+    <h1>Contact Us</h1>
+
+    <p class="contact-subtitle">
+      Choose your preferred method of contact.
+    </p>
+
+    <div class="contact-card">
+      <h3>📞 Call Us</h3>
+      <p>Monday - Saturday : 10AM - 7PM</p>
+
+      <a href="tel:+91980136XXXX" class="contact-btn">
+        +91 980136XXXX
+      </a>
+    </div>
+
+    <div class="contact-card">
+      <h3>📧 Email Us</h3>
+      <p>Our advisors will be delighted to answer your questions.</p>
+
+      <a href="mailto:contact@velovictoria.com" class="contact-btn">
+        Send an Email
+      </a>
+    </div>
+
+    <div class="contact-card">
+      <h3>💬 WhatsApp</h3>
+      <p>Chat directly with our team.</p>
+
+      <a href="https://wa.me/91980136XXXX" class="contact-btn">
+        WhatsApp
+      </a>
+    </div>
+
+  </div>
+
+
+  <!-- RIGHT SIDE FORM -->
 
   <form class="form">
-  
+
     <div class="field">
       <label>Name</label>
       <input type="text" placeholder="Victoria">
     </div>
 
     <div class="row">
+
       <div class="field">
         <label>Email</label>
         <input type="email" placeholder="xyz@gmail.com">
       </div>
 
       <div class="field">
-        <label>Phone number</label>
+        <label>Phone Number</label>
         <input type="tel" placeholder="987654321">
       </div>
+
     </div>
 
     <div class="field">
-      <label>Enter your message</label>
+      <label>Enter Your Message</label>
       <textarea placeholder="Enter your message here..."></textarea>
     </div>
 
-    <button type="submit">SEND MESSAGE</button>
+    <button type="submit">
+      SEND MESSAGE
+    </button>
 
   </form>
 
-
-  <div class="contact">
-    <h1>Contact Us</h1>
-    <p class="contact-subtitle">
-      We would love to hear from you.
-    </p>
-
-    <p>📞 <strong>Lets talk</strong><br>980136XXXX</p>
-    <p>📧 <strong>General Support</strong><br>contact@velovictoria.com</p>
-    <p>🌐 <strong>Our Website</strong><br>velovictoria.com</p>
-    <p>📍 <strong>Address</strong><br>4FT, VELOVICTORIA, INDIA</p>
-
-  </div>
-
 </section>
-  <div class="login-panel" id="loginPanel">
-
-    <span class="close-panel" id="closeLogin">&times;</span>
-
-    <h2>VELO VICTORIA</h2>
-
-    <form>
-        <label>Username</label>
-        <input type="text">
-
-        <label>Password</label>
-        <input type="password">
-
-        <button type="submit">LOGIN</button>
-    </form>
-
-</div>
 <script src="app.js"></script>
 </body>
 </html>

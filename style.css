@@ -1072,3 +1072,178 @@ body{
 }
 
 }
+/* ===========================
+   CONTACT PAGE - MOBILE FIX
+=========================== */
+
+.contact{
+    width:100%;
+}
+
+.contact h1{
+    font-size:36px;
+    line-height:1.1;
+    margin-bottom:12px;
+    font-family:'Cormorant Garamond', serif;
+}
+
+.contact-subtitle{
+    font-size:14px;
+    line-height:1.8;
+    letter-spacing:1px;
+    color:#777;
+    margin-bottom:30px;
+    text-transform:none;
+}
+
+.contact-card{
+    border:1px solid #eee;
+    padding:25px;
+    margin-bottom:20px;
+    background:#fff;
+}
+
+.contact-card h3{
+    font-size:24px;
+    margin-bottom:10px;
+    font-family:'Cormorant Garamond', serif;
+}
+
+.contact-card p{
+    font-size:15px;
+    line-height:1.7;
+    color:#666;
+    margin-bottom:15px;
+}
+
+.contact-btn{
+    display:inline-block;
+    min-width:180px;
+    padding:14px 28px;
+    border:1px solid #000;
+    border-radius:40px;
+    text-decoration:none;
+    color:#000;
+    text-align:center;
+    transition:.3s;
+}
+
+.contact-btn:hover{
+    background:#000;
+    color:#fff;
+}
+
+.faq-box{
+    margin-top:30px;
+    padding:25px;
+    border:1px solid #eee;
+    background:#fff;
+}
+
+.faq-box h2{
+    font-size:28px;
+    margin-bottom:20px;
+}
+
+details{
+    padding:15px 0;
+    border-bottom:1px solid #ddd;
+}
+
+summary{
+    cursor:pointer;
+    font-size:16px;
+}
+
+/* ===========================
+   MOBILE
+=========================== */
+
+@media(max-width:768px){
+
+.container{
+    display:flex;
+    flex-direction:column;
+    gap:35px;
+    padding:20px;
+}
+
+.contact{
+    order:1;
+}
+
+.form{
+    order:2;
+    width:100%;
+}
+
+.contact h1{
+    font-size:36px;
+}
+
+.contact-subtitle{
+    font-size:14px;
+    letter-spacing:1px;
+}
+
+.contact-card{
+    padding:20px;
+}
+
+.contact-card h3{
+    font-size:22px;
+}
+
+.contact-btn{
+    width:100%;
+    min-width:unset;
+    box-sizing:border-box;
+}
+
+.row{
+    flex-direction:column;
+    gap:15px;
+}
+
+.field{
+    width:100%;
+}
+
+input,
+textarea{
+    width:100%;
+    box-sizing:border-box;
+}
+
+.form button{
+    width:100%;
+    padding:15px;
+    letter-spacing:2px;
+}
+
+}
+@media(max-width:768px){
+
+.normal-nav{
+    display:flex !important;
+    visibility:visible !important;
+    opacity:1 !important;
+    position:relative !important;
+    z-index:9999 !important;
+}
+
+}
+
+@media(max-width:768px){
+
+
+.normal-nav{
+    justify-content:space-between;
+}
+
+.logo{
+    font-size:20px;
+    letter-spacing:3px;
+}
+
+}

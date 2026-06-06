@@ -40,54 +40,90 @@
 
     <div class="product-showcase">
 
-        <div class="product-box">
-            <img src="pictures/bag1.png" alt="">
-            <h3>BAGS</h3>
-        </div>
+    <a href="collection.html?category=bag" class="product-box">
+        <img src="pictures/bag1.png" alt="">
+        <h3>BAGS</h3>
+    </a>
 
-        <div class="product-box">
-            <img src="pictures/watch1.png" alt="">
-            <h3>WATCHES</h3>
-        </div>
+    <a href="collection.html?category=watch" class="product-box">
+        <img src="pictures/watch1.png" alt="">
+        <h3>WATCHES</h3>
+    </a>
 
-        <div class="product-box">
-            <img src="pictures/perfume1.png" alt="">
-            <h3>PERFUMES</h3>
-        </div>
+    <a href="collection.html?category=perfume" class="product-box">
+        <img src="pictures/perfume1.png" alt="">
+        <h3>PERFUMES</h3>
+    </a>
 
-        <div class="product-box">
-            <img src="pictures/sunglasses1.png" alt="">
-            <h3>SUNGLASSES</h3>
-        </div>
+    <a href="collection.html?category=sunglasses" class="product-box">
+        <img src="pictures/sunglasses1.png" alt="">
+        <h3>SUNGLASSES</h3>
+    </a>
 
-        <div class="product-box">
-            <img src="pictures/belt.jpg" alt="">
-            <h3>BELTS</h3>
-        </div>
+    <a href="collection.html?category=belt" class="product-box">
+        <img src="pictures/belt.jpg" alt="">
+        <h3>BELTS</h3>
+    </a>
 
-        <div class="product-box">
-            <img src="pictures/jewellery.jpg" alt="">
-            <h3>JEWELLERY</h3>
-        </div>
+    <a href="collection.html?category=jewellery" class="product-box">
+        <img src="pictures/jewellery.jpg" alt="">
+        <h3>JEWELLERY</h3>
+    </a>
 
-    </div>
+</div>
 
 </section>
-        <div class="login-panel" id="loginPanel">
+         <div class="login-panel" id="loginPanel">
 
     <span class="close-panel" id="closeLogin">&times;</span>
 
     <h2>VELO VICTORIA</h2>
 
-    <form>
+    <!-- LOGIN FORM -->
+    <div id="loginForm">
+
+        <form>
+            <label>Username</label>
+            <input type="text">
+
+            <label>Password</label>
+            <input type="password">
+
+            <button type="submit">LOGIN</button>
+        </form>
+
+        <p class="switch-form">
+            Don't have an account?
+            <a href="#" id="showSignup">
+                Create Account
+            </a>
+        </p>
+
+    </div>
+
+    <!-- SIGNUP FORM -->
+    <div id="signupForm" style="display:none;">
+
         <label>Username</label>
         <input type="text">
+
+        <label>Email</label>
+        <input type="email">
 
         <label>Password</label>
         <input type="password">
 
-        <button type="submit">LOGIN</button>
-    </form>
+        <button>Create Account</button>
+
+        <p>
+            Already have an account?
+            <a href="#" id="showLogin">
+                Login
+            </a>
+        </p>
+
+    </div>
+
 
 </div>
 <div class="search-overlay" id="searchOverlay">
@@ -122,17 +158,19 @@
 
         <a href="collection.html">COLLECTIONS</a>
 
-        <a href="#">BAGS</a>
+        <a href="collection.html?category=bag">BAGS</a>
 
-        <a href="#">WATCHES</a>
+        <a href="collection.html?category=watches">WATCHES</a>
 
-        <a href="#">PERFUMES</a>
+        <a href="collection.html?category=perfume">PERFUMES</a>
 
-        <a href="#">SUNGLASSES</a>
+        <a href="collection.html?category=sunglasses">SUNGLASSES</a>
 
-        <a href="#">BELTS</a>
+        <a href="collection.html?category=sandels">SANDELS</a>
 
-        <a href="#">JEWELLERY</a>
+        
+
+        
 
         <a href="contact.html">CONTACT</a>
 

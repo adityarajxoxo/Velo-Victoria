@@ -9,13 +9,27 @@ function renderProducts(items){
       <img src="${product.image}" alt="${product.name}">
       <h3>${product.name}</h3>
       <p>${product.price}</p>
-      <button class="view-btn">View Details</button>
+      <a href="product.html?id=${product.id}" class="view-btn">
+  View Details
+</a>
     </div>
   `).join("");
 
 }
 
 renderProducts(products);
+const params = new URLSearchParams(window.location.search);
+const category = params.get("category");
+
+if(category){
+
+    const filtered = products.filter(product =>
+        product.category === category
+    );
+
+    renderProducts(filtered);
+
+}
 
 const filterButtons =
 document.querySelectorAll(".filter-buttons button");

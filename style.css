@@ -1247,3 +1247,39 @@ textarea{
 }
 
 }
+.product-box{
+    text-decoration:none;
+    color:inherit;
+    display:block;
+    cursor:pointer;
+}
+.view-btn{
+    display:inline-block;
+    margin-top:15px;
+    padding:12px 35px;
+    border:1px solid #222;
+    text-decoration:none;
+    color:#222;
+    font-size:13px;
+    letter-spacing:2px;
+    text-transform:uppercase;
+    transition:0.3s;
+    font-family:'Cormorant Garamond', serif;
+}
+
+.view-btn:hover{
+    background:#222;
+    color:#fff;
+}
+.view-btn{
+    display:inline-block;
+    min-width:180px;
+    text-align:center;
+}
+.product-card h3{
+    font-size:22px;
+}
+
+.product-card p{
+    font-size:16px;
+}
